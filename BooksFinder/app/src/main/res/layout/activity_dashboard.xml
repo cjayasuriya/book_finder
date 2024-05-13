@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.chamal.booksfinder.DashboardActivity">
+
+    <!--<android.support.design.widget.AppBarLayout-->
+        <!--android:id="@+id/ll_top_header"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:theme="@style/AppTheme.AppBarOverlay">-->
+
+        <!--<android.support.v7.widget.Toolbar-->
+            <!--android:id="@+id/tool_add_new_customer"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="?attr/actionBarSize"-->
+            <!--android:title="Stores"-->
+            <!--app:titleTextColor="#FFFFFF">-->
+
+
+            <!--&lt;!&ndash;<ImageView&ndash;&gt;-->
+            <!--&lt;!&ndash;android:id="@+id/iv_menu_toolbar"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:layout_width="30dip"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:layout_height="30dip"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:layout_gravity="right"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:layout_marginRight="5dip"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:src="@drawable/menu" />&ndash;&gt;-->
+        <!--</android.support.v7.widget.Toolbar>-->
+    <!--</android.support.design.widget.AppBarLayout>-->
+
+
+
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingLeft="30dp"
+        android:paddingRight="30dp">
+
+
+
+        <TextView
+            android:id="@+id/helloDbTxt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="0dp"
+            android:paddingTop="30dp"
+            android:textColor="#3A539B"
+            android:textSize="40dp"
+            android:textAlignment="center"
+            android:textStyle="normal"
+            android:text="Hello" />
+
+        <TextView
+            android:id="@+id/userNameDbTxt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="30dp"
+            android:paddingTop="0dp"
+            android:textColor="#3A539B"
+            android:textSize="50dp"
+            android:textAlignment="center"
+            android:textStyle="normal"
+            android:text="User name !" />
+
+        <Button
+            android:id="@+id/goToBooksBtn"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dip"
+            android:background="#F7CA18"
+            android:textStyle="bold"
+            android:text="Books"
+            android:textAllCaps="false"
+            android:textColor="#ffffff" />
+        <Button
+            android:id="@+id/goToMyBooksBtn"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dip"
+            android:background="#F7CA18"
+            android:textStyle="bold"
+            android:text="My books"
+            android:textAllCaps="false"
+            android:textColor="#ffffff" />
+
+        <Button
+            android:id="@+id/goToProfileBtn"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dip"
+            android:background="#F7CA18"
+            android:textStyle="bold"
+            android:text="Profile"
+            android:textAllCaps="false"
+            android:textColor="#ffffff" />
+
+        <Button
+            android:id="@+id/goToLogoutBtn"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dip"
+            android:background="#F7CA18"
+            android:textStyle="bold"
+            android:text="Sign out"
+            android:textAllCaps="false"
+            android:textColor="#ffffff" />
+
+    </LinearLayout>
+
+</RelativeLayout>

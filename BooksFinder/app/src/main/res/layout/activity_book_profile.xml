@@ -1,0 +1,308 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.chamal.booksfinder.BookProfileActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fillViewport="true">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="190dp"
+                    android:id="@+id/rl_header_product"
+                    android:background="@drawable/profile_bk">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="fill_parent"
+                        android:orientation="vertical"
+                        android:layout_alignParentTop="true"
+                        android:layout_alignParentStart="true">
+
+                        <de.hdodenhof.circleimageview.CircleImageView
+                            android:id="@+id/iv_book_profile"
+                            android:layout_marginTop="10dp"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_width="80dip"
+                            android:layout_height="80dip"
+                            android:src="@drawable/profile_bk"
+                            app:civ_border_width="2dp"
+                            app:civ_border_color="#FFFFFF"/>
+
+                        <TextView
+                            android:id="@+id/book_profile_header_name_TV"
+                            android:textAlignment="center"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="book_name"
+                            android:textSize="25dp"
+                            android:textStyle="bold"
+                            android:textColor="#FFFFFF"/>
+
+                        <TextView
+                            android:id="@+id/book_profile_header_isbn_TV"
+                            android:textAlignment="center"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="isbn"
+                            android:textSize="20dp"
+                            android:textColor="#FFFFFF"/>
+
+                        <Button
+                            android:id="@+id/statusBtn"
+                            android:layout_width="120dp"
+                            android:layout_height="30dp"
+                            android:background="#F7CA18"
+                            android:layout_gravity="center"
+                            android:textStyle="bold"
+                            android:text="status"
+                            android:textAllCaps="false"
+                            android:textColor="#ffffff" />
+
+                    </LinearLayout>
+
+                </RelativeLayout>
+
+                <!--    CATEGORY   -->
+                <LinearLayout
+                    android:id="@+id/book_category_ll"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="12dp">
+
+                    <ImageView
+                        android:layout_width="20dip"
+                        android:layout_height="20dip"
+                        android:layout_marginLeft="2dip"
+                        android:src="@drawable/category_icon"
+                        android:layout_gravity="center"/>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/book_category_HTV"
+                            android:layout_marginLeft="8dip"
+                            android:text="Category :"
+                            android:textSize="17dp"
+                            android:textStyle="bold"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/book_category_TV"
+                            android:layout_marginLeft="8dip"
+                            android:text="category"
+                            android:textSize="17dp"/>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <!--    EDITION   -->
+                <LinearLayout
+                    android:id="@+id/book_edition_ll"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="12dp">
+
+                    <ImageView
+                        android:layout_width="20dip"
+                        android:layout_height="20dip"
+                        android:layout_marginLeft="2dip"
+                        android:src="@drawable/edition_icon"
+                        android:layout_gravity="center"/>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/book_edition_HTV"
+                            android:layout_marginLeft="8dip"
+                            android:text="Edition :"
+                            android:textSize="17dp"
+                            android:textStyle="bold"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/book_edition_TV"
+                            android:layout_marginLeft="8dip"
+                            android:text="edition"
+                            android:textSize="17dp"/>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <!--    AUTHOR   -->
+                <LinearLayout
+                    android:id="@+id/book_author_ll"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="12dp">
+
+                    <ImageView
+                        android:layout_width="20dip"
+                        android:layout_height="20dip"
+                        android:layout_marginLeft="2dip"
+                        android:src="@drawable/user_icon"
+                        android:layout_gravity="center"/>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/book_author_HTV"
+                            android:layout_marginLeft="8dip"
+                            android:text="Author :"
+                            android:textSize="17dp"
+                            android:textStyle="bold"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/book_author_TV"
+                            android:layout_marginLeft="8dip"
+                            android:text="author"
+                            android:textSize="17dp"/>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <!--    PUBLISHER   -->
+                <LinearLayout
+                    android:id="@+id/book_publisher_ll"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="12dp">
+
+                    <ImageView
+                        android:layout_width="20dip"
+                        android:layout_height="20dip"
+                        android:layout_marginLeft="2dip"
+                        android:src="@drawable/publisher_icon"
+                        android:layout_gravity="center"/>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/book_publisher_HTV"
+                            android:layout_marginLeft="8dip"
+                            android:text="Publisher :"
+                            android:textSize="17dp"
+                            android:textStyle="bold"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/book_publisher_TV"
+                            android:layout_marginLeft="8dip"
+                            android:text="publisher"
+                            android:textSize="17dp"/>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <!-- DESCRIPTION -->
+                <LinearLayout
+                    android:id="@+id/book_descm_ll"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="10dp">
+
+                    <ImageView
+                        android:layout_width="20dip"
+                        android:layout_height="20dip"
+                        android:layout_marginLeft="2dip"
+                        android:src="@drawable/description_icon"
+                        android:layout_gravity="center"/>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/book_desc_HTV"
+                            android:layout_marginLeft="8dip"
+                            android:text="Description :"
+                            android:textSize="17dp"
+                            android:textStyle="bold"/>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <!-- DESCRIPTION BODY -->
+                <LinearLayout
+                    android:id="@+id/book_descb_ll"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingTop="5dp"
+                    android:paddingLeft="40dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="90dp"
+                        android:id="@+id/book_desc_TV"
+                        android:layout_marginLeft="8dip"
+                        android:text="description"
+                        android:textSize="17dp"/>
+
+            </LinearLayout>
+
+            </LinearLayout>
+
+        </ScrollView>
+
+    </LinearLayout>
+
+</LinearLayout>

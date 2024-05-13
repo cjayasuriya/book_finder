@@ -1,0 +1,374 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.chamal.booksfinder.EditProfileActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fillViewport="true">
+
+            <LinearLayout
+                android:id="@+id/edit_user_ll"
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/fitstname_TV"
+                    android:paddingTop="20dp"
+                    android:paddingBottom="4dp"
+                    android:text="First name *"
+                    android:textSize="13dp"/>
+
+                <EditText
+                    android:id="@+id/firstname_ET"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:hint="First name"
+                    android:inputType="textPersonName"
+                    android:padding="10dp"
+                    android:backgroundTint="#3d3d3d"
+                    android:textColor="#3d3d3d"
+                    android:textColorHint="#afafaf" />
+
+                <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/middlename_TV"
+                android:paddingTop="10dp"
+                android:paddingBottom="4dp"
+                android:text="Middle name"
+                android:textSize="13dp"/>
+
+                <EditText
+                    android:id="@+id/middlename_ET"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:hint="Middle name"
+                    android:inputType="textPersonName"
+                    android:padding="10dp"
+                    android:backgroundTint="#3d3d3d"
+                    android:textColor="#3d3d3d"
+                    android:textColorHint="#afafaf" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/lastname_TV"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="4dp"
+                    android:text="Last name *"
+                    android:textSize="13dp"/>
+
+                <EditText
+                    android:id="@+id/lastname_ET"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:hint="Last name"
+                    android:inputType="textPersonName"
+                    android:padding="10dp"
+                    android:backgroundTint="#3d3d3d"
+                    android:textColor="#3d3d3d"
+                    android:textColorHint="#afafaf" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/email_TV"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="4dp"
+                    android:text="Email *"
+                    android:textSize="13dp"/>
+
+                <EditText
+                    android:id="@+id/email_ET"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:hint="Email"
+                    android:inputType="textEmailAddress"
+                    android:padding="10dp"
+                    android:backgroundTint="#3d3d3d"
+                    android:textColor="#3d3d3d"
+                    android:textColorHint="#afafaf" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/telephone_TV"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="4dp"
+                    android:text="Telephone"
+                    android:textSize="13dp"/>
+
+                <EditText
+                    android:id="@+id/telephone_ET"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:hint="Telephone"
+                    android:inputType="textPersonName"
+                    android:padding="10dp"
+                    android:backgroundTint="#3d3d3d"
+                    android:textColor="#3d3d3d"
+                    android:textColorHint="#afafaf" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/mobile_TV"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="4dp"
+                    android:text="Mobile *"
+                    android:textSize="13dp"/>
+
+                <EditText
+                    android:id="@+id/mobile_ET"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:hint="Mobile"
+                    android:inputType="textPersonName"
+                    android:padding="10dp"
+                    android:backgroundTint="#3d3d3d"
+                    android:textColor="#3d3d3d"
+                    android:textColorHint="#afafaf" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/address1_TV"
+                    android:paddingTop="30dp"
+                    android:paddingBottom="4dp"
+                    android:text="Address 1"
+                    android:textSize="13dp"/>
+
+                <EditText
+                    android:id="@+id/address1_ET"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:hint="Address 1"
+                    android:inputType="textPersonName"
+                    android:padding="10dp"
+                    android:backgroundTint="#3d3d3d"
+                    android:textColor="#3d3d3d"
+                    android:textColorHint="#afafaf" />
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/address2_TV"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="4dp"
+                    android:text="Address 2"
+                    android:textSize="13dp"/>
+
+                <EditText
+                    android:id="@+id/address2_ET"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:hint="Address 2"
+                    android:inputType="textPersonName"
+                    android:padding="10dp"
+                    android:backgroundTint="#3d3d3d"
+                    android:textColor="#3d3d3d"
+                    android:textColorHint="#afafaf" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/city_TV"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="4dp"
+                    android:text="City"
+                    android:textSize="13dp"/>
+
+                <EditText
+                    android:id="@+id/city_ET"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:hint="City"
+                    android:inputType="textPersonName"
+                    android:padding="10dp"
+                    android:backgroundTint="#3d3d3d"
+                    android:textColor="#3d3d3d"
+                    android:textColorHint="#afafaf" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/state_TV"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="4dp"
+                    android:text="State"
+                    android:textSize="13dp"/>
+
+                <EditText
+                    android:id="@+id/state_ET"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:hint="State"
+                    android:inputType="textPersonName"
+                    android:padding="10dp"
+                    android:backgroundTint="#3d3d3d"
+                    android:textColor="#3d3d3d"
+                    android:textColorHint="#afafaf" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/zip_TV"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="4dp"
+                    android:text="Zip"
+                    android:textSize="13dp"/>
+
+                <EditText
+                    android:id="@+id/zip_ET"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:hint="Zip"
+                    android:inputType="textPersonName"
+                    android:padding="10dp"
+                    android:backgroundTint="#3d3d3d"
+                    android:textColor="#3d3d3d"
+                    android:textColorHint="#afafaf" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/gender_TV"
+                    android:paddingTop="30dp"
+                    android:paddingBottom="4dp"
+                    android:text="Gender"
+                    android:textSize="13dp"/>
+
+                <Spinner
+                    android:id="@+id/gender_spinner"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content" />
+
+
+                <!--<EditText-->
+                    <!--android:id="@+id/gender_ET"-->
+                    <!--android:layout_width="fill_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_marginBottom="10dp"-->
+                    <!--android:hint="Gender"-->
+                    <!--android:inputType="textPersonName"-->
+                    <!--android:padding="10dp"-->
+                    <!--android:backgroundTint="#3d3d3d"-->
+                    <!--android:textColor="#3d3d3d"-->
+                    <!--android:textColorHint="#afafaf" />-->
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/dob_TV"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="4dp"
+                    android:text="D.O.B"
+                    android:textSize="13dp"/>
+
+                <EditText
+                    android:id="@+id/dob_ET"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:hint="D.O.B"
+                    android:inputType="textPersonName"
+                    android:padding="10dp"
+                    android:backgroundTint="#3d3d3d"
+                    android:textColor="#3d3d3d"
+                    android:textColorHint="#afafaf" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/nation_TV"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="4dp"
+                    android:text="Nationality"
+                    android:textSize="13dp"/>
+
+                <EditText
+                    android:id="@+id/nation_ET"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:hint="Nationality"
+                    android:inputType="textPersonName"
+                    android:padding="10dp"
+                    android:backgroundTint="#3d3d3d"
+                    android:textColor="#3d3d3d"
+                    android:textColorHint="#afafaf" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/desc_TV"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="4dp"
+                    android:text="Descrption"
+                    android:textSize="13dp"/>
+
+                <EditText
+                    android:id="@+id/desc_ET"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:hint="Descrption"
+                    android:inputType="textPersonName"
+                    android:padding="10dp"
+                    android:backgroundTint="#3d3d3d"
+                    android:textColor="#3d3d3d"
+                    android:textColorHint="#afafaf" />
+
+                <Button
+                    android:id="@+id/editUserProfileBtn"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dip"
+                    android:layout_marginBottom="20dip"
+                    android:background="#F7CA18"
+                    android:textStyle="bold"
+                    android:text="Update profile"
+                    android:textAllCaps="false"
+                    android:textColor="#ffffff" />
+
+
+            </LinearLayout>
+
+
+        </ScrollView>
+
+    </LinearLayout>
+
+
+
+</LinearLayout>
